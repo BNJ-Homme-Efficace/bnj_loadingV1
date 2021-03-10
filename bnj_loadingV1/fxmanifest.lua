@@ -12,6 +12,5 @@ files {
     'html/img/flouville.png',
     'html/js/jquery-2.1.1.js',
     'html/js/main.js',
-    'html/js/app.js',
     'html/js/modernizr.js'
 }
