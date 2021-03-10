@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/reset.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Geo&family=Righteous&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/modernizr.js"></script>
+        <title>BNJ - Loader</title>
+    </head>
+    <body class="background" style="background-image: url(img/flouville.png);background-repeat: no-repeat;background-size: 1300px;background-position: bottom;background-blend-mode: darken;">
+        <div class="border1">
+            <div class="border2">
+                <div class="content">
+                    <img src="img/logo.png" style="width: 130px;">
+                    <h1 style="color: white;">BNJ</h1>
+                    <h2 style="padding-left: 5px;font-style: italic;">Homme Efficace</h2>
+                </div>
+                <div class="content2">
+                    <span class="cd-words-wrapper waiting" style="color: #070707;font-style: italic;padding-right: 3px;">.</span>
+                    <h5 class="cd-headline letters type" style="font-size: 15px;">
+                    <span class="cd-words-wrapper waiting">
+                        <b class="is-visible">🗽 Vivez votre Réalité</b>
+                        <b>discord.gg/wySy9acnmT</b>
+                        <b>Chargement des ressources...</b>
+                        <b>Préparation de votre personnage...</b>
+                    </span>
+                </h5>
+                </div>
+                
+            </div>
+
+            <div style="bottom: 13px;position: absolute;font-family: 'Righteous', cursive;left: 13px;color: white;"><p id="link">discord.gg/wySy9acnmT</p></div>
+        </div>
+        
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/app.js"></script>
+        <audio id="cs_audio" autoplay loop controls volume="0.010">
+            <source src="music.mp3" type="audio/mpeg">
+			<script>
+			var audio_element = document.getElementById("cs_audio");
+			document.onkeydown = function(event) {
+			switch (event.keyCode) {
+				case 38:
+					event.preventDefault();
+					audio_vol = audio_element.volume;
+					if (audio_vol!=1) {
+						try {
+								audio_element.volume = audio_vol + 0.02;
+							}
+						catch(err) {
+								audio_element.volume = 0.02;
+							}
+              
+						}
+            
+					break;
+				case 40:
+					event.preventDefault();
+					audio_vol = audio_element.volume;
+					if (audio_vol!=0) {
+						try {
+								audio_element.volume = audio_vol - 0.02;
+							}
+						catch(err) {
+								audio_element.volume = 0;
+							}
+              
+						}
+            
+					break;
+                case 8:
+					event.preventDefault();
+					audio_vol = audio_element.volume;
+					if (audio_vol!=1) {
+						try {
+								audio_element.volume = 0.00;
+							}
+						catch(err) {
+								audio_element.volume = 0.00;
+							}
+              
+						}
+            
+					break;
+				}
+			};
+			</script>
+        </audio>
+		
+    </body>
+</html>
